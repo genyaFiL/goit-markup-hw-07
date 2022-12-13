@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholder";
+// @import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/reset";
+@import "./base/card-set";
+@import "./base/icon";
+
+@import "./components/container";
+@import "./components/section";
+@import "./components/btn";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/works";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/modal";
