@@ -157,11 +157,6 @@ img {
   padding-bottom: 94px;
 }
 
-.btn,
-.btn__item {
-  color: inherit;
-}
-
 .btn {
   display: block;
   margin-left: auto;
@@ -213,8 +208,6 @@ img {
 }
 
 .header__container,
-.nav,
-.nav__list,
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,15 +224,12 @@ img {
           justify-content: center;
 }
 
-.nav {
-  margin-right: auto;
+.header__list {
+  gap: 50px;
 }
 
-.header__container .link {
+.header__link {
   padding: 32px 0;
-}
-
-.contacts .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,19 +239,26 @@ img {
   gap: 10px;
   color: var(--secondary-text-color);
 }
-
-.link:hover,
-.link:focus {
+.header__link:hover, .header__link:focus {
   color: var(--accent-text-color);
 }
 
-.nav__list,
-.header__list {
-  gap: 50px;
+.nav {
+  margin-right: auto;
 }
 
-.nav__list,
-.contacts {
+.nav,
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  gap: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -269,12 +266,20 @@ img {
   color: var(--navigation-text-color);
 }
 
-.header__list {
-  gap: 50px;
-}
-
 .nav__item {
   position: relative;
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: var(--secondary-text-color);
+}
+.nav__item:hover, .nav__item:focus {
+  color: var(--accent-text-color);
 }
 
 .nav__item--current {
@@ -318,8 +323,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero__title,
-.portfolio-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -327,16 +331,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
-
-.section__title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--navigation-text-color);
 }
 
 .about {
@@ -388,10 +382,30 @@ img {
   padding-bottom: 94px;
 }
 
+.works__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--navigation-text-color);
+}
+
 .team {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-background-color);
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--navigation-text-color);
 }
 
 .team__wrap {
@@ -472,8 +486,18 @@ img {
 }
 
 .clients {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--navigation-text-color);
 }
 
 .clients .card-set__item {
@@ -529,6 +553,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+}
+
+.address_link:hover, .address_link:focus {
+  color: var(--accent-text-color);
 }
 
 .address__tel,
@@ -603,6 +631,16 @@ img {
   margin-bottom: 50px;
 }
 
+.portfolio-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
 .portfolio-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,9 +702,7 @@ img {
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
-
-.project-link:hover,
-.project-link:focus {
+.project-link:hover, .project-link:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }

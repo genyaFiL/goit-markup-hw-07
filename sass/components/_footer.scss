@@ -23,6 +23,13 @@
 	color: var(--primary-white-color);
 }
 
+.address_link {
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}
+
 .address__tel,
 .address__mail {
 	font-size: 14px;

@@ -21,8 +21,7 @@
 	margin-bottom: 30px;
 }
 
-.hero__title,
-.portfolio-title {
+.hero__title {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -30,14 +29,4 @@
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
-}
-
-.section__title {
-	margin-bottom: 30px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--navigation-text-color);
 }

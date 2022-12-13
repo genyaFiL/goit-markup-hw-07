@@ -1,6 +1,10 @@
 .clients {
 	// @extend %section;
-	@include section(0, 94px);
+	@include section;
+}
+
+.clients__title {
+	@include title;
 }
 
 .clients .card-set__item {

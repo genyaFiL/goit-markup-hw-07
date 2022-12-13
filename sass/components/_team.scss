@@ -1,8 +1,12 @@
 .team {
 	// @extend %section;
-	@include section(0, 94px);
+	@include section;
 
 	background-color: var(--secondary-background-color);
+}
+
+.team__title {
+	@include title;
 }
 
 .team__wrap {
