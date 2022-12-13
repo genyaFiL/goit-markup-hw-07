@@ -6,9 +6,6 @@
 
 .card-set__item {
 	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
-}
-
-.card-set__item {
 	position: relative;
 }
 

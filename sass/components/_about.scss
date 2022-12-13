@@ -1,5 +1,6 @@
 .about {
-	@extend %section;
+	// @extend %section;
+	@include section;
 }
 
 .about__wrap {

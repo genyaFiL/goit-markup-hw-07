@@ -1,13 +1,15 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/placeholder";
-// @import "./utils/mixins";
+@import "./utils/mixins";
 
 @import "./base/base";
 @import "./base/reset";
 @import "./base/card-set";
 @import "./base/icon";
+@import "./base/flex";
 
+@import "./components/logo";
 @import "./components/container";
 @import "./components/section";
 @import "./components/btn";
