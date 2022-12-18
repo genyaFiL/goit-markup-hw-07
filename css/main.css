@@ -179,30 +179,6 @@ img {
   cursor: pointer;
 }
 
-.btn__item {
-  padding: 6px 23px;
-  min-width: 73px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: var(--navigation-text-color);
-  background-color: var(--secondary-background-color);
-  border: none;
-  border-radius: 4px;
-  -webkit-transition: background-color var(--animation), color var(--animation), -webkit-box-shadow var(--animation);
-  transition: background-color var(--animation), color var(--animation), -webkit-box-shadow var(--animation);
-  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
-  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
-}
-.btn__item:hover, .btn__item:focus, .btn__item--current {
-  background-color: var(--accent-text-color);
-  color: var(--primary-white-color);
-  cursor: pointer;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .header {
   border-bottom: var(--primary-border);
 }
@@ -303,17 +279,14 @@ img {
   max-width: 1600px;
   min-height: 600px;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 250px;
   background-color: var(--hero-background-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero__section {
-  padding-top: 200px;
-  padding-bottom: 250px;
 }
 
 .hero__title {
@@ -627,10 +600,6 @@ img {
   fill: var(--primary-white-color);
 }
 
-.filter {
-  margin-bottom: 50px;
-}
-
 .portfolio-title {
   font-weight: 900;
   font-size: 44px;
@@ -649,6 +618,34 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
+}
+
+.filter {
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  padding: 6px 23px;
+  min-width: 73px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--navigation-text-color);
+  background-color: var(--secondary-background-color);
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: background-color var(--animation), color var(--animation), -webkit-box-shadow var(--animation);
+  transition: background-color var(--animation), color var(--animation), -webkit-box-shadow var(--animation);
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
+}
+.filter__item:hover, .filter__item:focus, .filter__item--current {
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-thumb {
